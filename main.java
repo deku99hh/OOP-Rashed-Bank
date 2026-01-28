@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.text.View;
+
 public class main {
     public static void main(String[] args){
 
@@ -20,9 +22,14 @@ public class main {
         userAcount = rashed.login(id, password);
         if (userAcount != null) {
             
-            System.out.println("welcome back" + userAcount.name);
+            userAcount.targetedBank(rashed);
 
-
+            userAcount.loginOptions();
+            
+            userAcount.choiceOptions();
+            
+            
+            
 
 
 
